@@ -3,10 +3,12 @@ package com.geekbrains.player;
 public class Robot implements Player {
     private final int range;
     private final int jumpHeight;
+    private boolean isDo;
 
     public Robot(int range, int jumpHeight) {
         this.range = range;
         this.jumpHeight = jumpHeight;
+        this.isDo = true;
     }
 
     @Override
@@ -27,6 +29,16 @@ public class Robot implements Player {
     @Override
     public int getRange() {
         return range;
+    }
+
+    @Override
+    public boolean isDo() {
+        return isDo;
+    }
+
+    @Override
+    public void setDo(boolean aDo) {
+        isDo = aDo;
     }
 
 

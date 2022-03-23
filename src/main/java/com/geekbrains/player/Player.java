@@ -8,4 +8,8 @@ public interface Player {
     int getJumpHeight();
 
     int getRange();
+
+    boolean isDo();
+
+    void setDo(boolean aDo);
 }

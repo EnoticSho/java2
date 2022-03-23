@@ -3,10 +3,12 @@ package com.geekbrains.player;
 public class Cat implements Player {
     private final int range;
     private final int jumpHeight;
+    private boolean isDo;
 
     public Cat(int range, int jumpHeight) {
         this.range = range;
         this.jumpHeight = jumpHeight;
+        this.isDo = true;
     }
 
     @Override
@@ -25,5 +27,15 @@ public class Cat implements Player {
 
     public int getRange() {
         return range;
+    }
+
+    @Override
+    public boolean isDo() {
+        return isDo;
+    }
+
+    @Override
+    public void setDo(boolean aDo) {
+        isDo = aDo;
     }
 }
