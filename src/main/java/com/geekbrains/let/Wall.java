@@ -19,6 +19,5 @@ public class Wall implements Obstacle {
                 System.out.println(player.getClass().getSimpleName() + " не перепрыгнул стену и сошел с дистанции");
             }
         }
-
     }
 }

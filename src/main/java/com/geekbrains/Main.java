@@ -16,24 +16,8 @@ public class Main {
                         new Cat(6, 4),
                         new Robot(6, 6),
                         new Robot(2, 6)});
-        c.doIt(team); // Просим команду пройти полосу
+        c.doIt(team);
         team.playersInfo();
-        team.showResults(); // Показываем результаты
-
-
-//        Player[] players = new Player[3];
-//        Obstacle[] obstacles = new Obstacle[2];
-//        players[0] = new Human(4, 6);
-//        players[1] = new Cat(6, 4);
-//        players[2] = new Robot(2, 6);
-//
-//        obstacles[0] = new Racetrack(5);
-//        obstacles[1] = new Wall(5);
-//
-//        for (Player player : players) {
-//            for (Obstacle obstacle : obstacles) {
-//                obstacle.pass(player);
-//            }
-//        }
+        team.showResults();
     }
 }

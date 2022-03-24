@@ -21,7 +21,7 @@ public class Team {
 
     public void playersInfo(){
         for (int i = 1; i <= players.length; i++){
-            System.out.printf("%d участник команды %s : %s ", i , name, players[i-1].getClass().getSimpleName());
+            System.out.printf("%d участник команды %s : %s - максимальная дальность бега: %d, максимальная высота прыжка: %d", i , name, players[i-1].getClass().getSimpleName(), players[i-1].getRange(), players[i-1].getJumpHeight());
             System.out.println();
         }
     }
